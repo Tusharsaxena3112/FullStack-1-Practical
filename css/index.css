@@ -1,11 +1,97 @@
+*{
+    margin: 0;
+    padding:0
+}
 body{
-    background-color: rgb(233, 200, 188);
+    background-image: url(../images/cover-4.jpg);
+    margin:10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1{
-    color: rgb(53, 104, 64);
+.main-heading{
+    color:black;
+    font-size: 70px;
+    text-align: center;
+    margin:30px;
+    font-variant: small-caps;
 }
 
-h3{
+.notify{
+    margin: 30px;
+    font-size: 20px;
+    background-color: wheat;
+    border:1px solid black;
+    box-shadow: 2px 2px 2px 2px black;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px;
+    animation: slide 15s linear infinite;
     color: red;
+}
+
+@keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(90%,0, 0);
+    }
+  }
+
+h2{
+    font-size: 50px;
+    display: inline;
+    border:1px solid black;
+    padding: 10px;
+   
+}
+
+p{
+    font-size: 30px;
+    line-height: 50px;
+    margin-top:30px ;
+    margin-bottom: 30px;
+}
+
+.container{
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border:1px solid grey; */
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.container ul{
+    text-decoration: none;
+    list-style: none;
+    
+}
+.container li a{
+    text-decoration: none;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: red;
+}
+
+.container li{
+    margin: 10px;
+    padding: 10px;
+}
+
+.container li:hover{
+    transition: transform 3s;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container a:hover{
+    background-color: yellow;
+    color: blue;
+    transition: 2s;
 }
