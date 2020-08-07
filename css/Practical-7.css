@@ -36,7 +36,7 @@ body{
     background-color: rgb(200, 218, 42);
     height:100vh;
     color:white;
-    font-size: 25px;
+    font-size: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
     width:100vw;
@@ -79,7 +79,7 @@ body{
     height:76vh;
     background-color: tomato;
     color:white;
-    font-size: 25px;
+    font-size: 50px;
     margin: 5px;
 }
 
@@ -99,7 +99,7 @@ body{
     background-color: teal;
     color: whitesmoke;
     height:25vh;
-    font-size: 25px;
+    font-size: 50px;
 }
 .sec-3{
     /* border:1px black solid; */
@@ -128,5 +128,5 @@ body{
     justify-content: center;
     align-items: center;
     width:100vw;
-    font-size: 25px;
+    font-size: 50px;
 }
