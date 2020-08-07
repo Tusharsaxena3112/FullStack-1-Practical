@@ -99,6 +99,7 @@ body{
     background-color: teal;
     color: whitesmoke;
     height:25vh;
+    font-size: 25px;
 }
 .sec-3{
     /* border:1px black solid; */
@@ -127,4 +128,5 @@ body{
     justify-content: center;
     align-items: center;
     width:100vw;
+    font-size: 25px;
 }
