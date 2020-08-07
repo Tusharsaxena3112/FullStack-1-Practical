@@ -130,3 +130,12 @@ body {
   width: 100vw;
   font-size: 50px;
 }
+
+.content{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 50px;
+    margin-top:5px;
+    margin-bottom:5px
+}
