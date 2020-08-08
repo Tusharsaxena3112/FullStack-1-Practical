@@ -27,7 +27,6 @@ body {
 
 .header-image img{
   width:100%;
-  margin: 10px;
 }
 
 .banner {
@@ -62,25 +61,30 @@ body {
   border-bottom:1px white solid ;
 }
 .sec-1 {
-  /* border:1px solid black; */
+  /* border: 1px solid black; */
   display: flex;
-  flex-direction: row;
-  margin: 2px;
-  width: 100vw;
-  height: 60vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 98vw;
+  height: 60vh; 
 }
-.sec-1-box {
+.sec-1-box p{
+  text-align: center;
+  font-size:25px;
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+
+.sec-1-box img{
   background-color: turquoise;
   /* border:1px solid red; */
-  height: 50%;
-  width: 20%;
-  margin: 30px;
+  height: 60%;
+  width: 70%;
   border-radius: 50%;
-  text-align: center;
-  justify-content: center;
+  margin-left: 50px;
+  box-shadow: 2px 2px 2px 2px grey;
 }
 .sec-2 {
   display: flex;
@@ -156,6 +160,6 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 5px;
 }
