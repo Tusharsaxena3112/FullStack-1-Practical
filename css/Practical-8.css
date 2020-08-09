@@ -4,15 +4,13 @@
 }
 body {
   /* margin-left: 10px; */
-  background: rgb(234,234,234);
+  background: rgb(234, 234, 234);
   margin-right: 0px;
 }
 .container {
   display: block;
   width: 100%;
   /* background-color: darkgray; */
-  border-radius: 10px;
-  padding: 0.1%;
 }
 
 .heading {
@@ -111,7 +109,7 @@ body {
   line-height: 40px;
   background-color: black;
   border-radius: 10px;
- font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .left-style h1 {
@@ -137,34 +135,67 @@ body {
   font-size: 50px;
   border-radius: 10px;
 }
-.right-box:hover{
+.right-box:hover {
   box-shadow: 2px 2px 2px 2px grey;
+}
+
+@media (min-width: 696px) and (max-width: 1560px) {
+  .sec-2 {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .left-style {
+    display: block;
+  }
+}
+
+@media (max-width: 695px) {
+  .sec-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .left-style {
+    display: none;
+  }
+
+  .content h1 {
+    margin-bottom: 50px;
+  }
 }
 
 .sec-3 {
   height: 60vh;
   margin-top: 10px;
   margin-bottom: 50px;
-  display: flex;
-  flex-direction: row;
   width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sec-3-box {
-  /* background-color: brown; */
-  width: 25%;
-  margin: 5px;
-  padding: 15px;
+.sec-3-box img {
+  width: 70%;
   border-radius: 10px;
-  height:40vh ;
+  margin-left: 50px;
 }
 
-.sec-3-box img{
-  width: 100%;
-  border-radius: 10px;
-}
-
-.sec-3-box p{
+.sec-3-box p {
   text-align: center;
   font-size: 25px;
   font-weight: bolder;
@@ -180,17 +211,17 @@ body {
   width: 98vw;
 }
 
-.sec-4-left{
+.sec-4-left {
   width: 50%;
 }
-.sec-4-right{
-  width:50%
+.sec-4-right {
+  width: 50%;
 }
 
-.sec-4-right-box{
-  height:15vh;
-  border:1px solid black;
-  margin:10px;
+.sec-4-right-box {
+  height: 15vh;
+  border: 1px solid black;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,10 +231,9 @@ body {
   background-color: lavenderblush;
 }
 
-.sec-4-right-box:hover{
+.sec-4-right-box:hover {
   box-shadow: 2px 2px 2px 2px grey;
 }
-
 
 .sec-5 {
   /* border:1px solid black; */
@@ -227,6 +257,6 @@ body {
   margin-top: 15px;
   margin-bottom: 5px;
 }
-.content h1{
-  margin-top:50px
+.content h1 {
+  margin-top: 50px;
 }
