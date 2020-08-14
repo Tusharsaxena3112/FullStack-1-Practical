@@ -2,105 +2,172 @@
   margin: 0;
   padding: 0;
 }
-body {
-  /* margin: 10px; */
-}
-.container {
-  display: block;
-  width: 100%;
-  /* background-color: darkgray; */
-  border-radius: 10px;
-  padding: 0.1%;
+body{
+  background: rgb(234, 234, 234);
+  margin: 5px;
 }
 
-.heading {
+
+.container {
+  width: 100%;
+}
+
+.heading{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
   background-color: grey;
   color: white;
   font-size: 50px;
-  /* padding:10px; */
-  width: 100vw;
+  width: 98vw;
   height: 15vh;
   margin-top: 10px;
-  margin-bottom: 10px;
+  position: sticky;
+  top:0;
+  box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 2px;
+}
+.nav li {
+  display: inline;
+  margin: 40px;
+}
+.nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color:black;
+  transition: 2s;
 }
 
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
-  background-color: rgb(200, 218, 42);
+  background-image: url(../images/banner.jpg);
   height: 100vh;
-  color: white;
-  font-size: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100vw;
+  width: 98vw;
+  border-radius: 10px;
+}
+
+.banner-content{
+  text-align: center;
+  width: 30vw;
+  font-size: 80px;
+  color: rgb(202, 190, 190);
+  font-variant: small-caps;
+  border-bottom: 1px solid white;
 }
 .sec-1 {
-  /* border:1px solid black; */
+  /* border: 1px solid black; */
   display: flex;
-  flex-direction: row;
-  margin: 2px;
-  width: 100vw;
-  height: 60vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  width: 98vw;
+  height: 80vh;
 }
-.sec-1-box {
-  background-color: turquoise;
-  /* border:1px solid red; */
-  height: 50%;
-  width: 20%;
-  margin: 30px;
-  border-radius: 50%;
+.sec-1-box p {
   text-align: center;
-  justify-content: center;
+  font-size: 25px;
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+
+.sec-1-box img {
+  background-color: rgb(253, 239, 174);
+  height: 60%;
+  width: 70%;
+  border-radius: 50%;
+  margin-left: 50px;
+  box-shadow: 2px 2px 2px 2px grey;
 }
 .sec-2 {
   display: flex;
   flex-direction: row;
   /* border:1px black solid; */
-  height: 80vh;
+  height: 90vh;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100vw;
+  width: 98vw;
 }
 .left {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   width: 50%;
-  height: 76vh;
-  background-color: tomato;
+  height: 72vh;
+  background-color: rgb(173, 159, 157);
   color: white;
-  font-size: 50px;
+  font-size: 25px;
   margin: 5px;
+  padding:15px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
+.left h1{
+  margin-left:5px ;
+  margin-bottom: 5px;
+}
 .right {
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 76vh;
-  margin: 5px;
+  margin: 15px;
 }
 
-.right-box {
-  margin: 2px;
+.right-box-1 {
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: teal;
+  background-image: url(../images/p1.jpg);
   color: whitesmoke;
-  height: 25vh;
-  font-size: 50px;
+  height: 45vh;
+  border-radius: 2px;
+  border:1px solid black
 }
+.right-box-2 {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/p2.jpeg);
+  color: whitesmoke;
+  height: 45vh;
+  border-radius: 2px;
+  border:1px solid black
+}
+.right-box-3 {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/p3.jpg);
+  color: whitesmoke;
+  height: 45vh;
+  border-radius: 2px;
+  border:1px solid black
+}
+
+.right-box-1:hover{
+  box-shadow: 5px 5px 5px 5px grey;
+  transition: 1s;
+}
+.right-box-2:hover{
+  box-shadow: 5px 5px 5px 5px grey;
+  transition: 1s;
+}
+.right-box-3:hover{
+  box-shadow: 5px 5px 5px 5px grey;
+  transition: 1s;
+}
+
 .sec-3 {
   /* border:1px black solid; */
   height: 60vh;
@@ -108,7 +175,7 @@ body {
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 98vw;
 }
 
 .sec-3-box {
@@ -127,7 +194,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 98vw;
   font-size: 50px;
 }
 
