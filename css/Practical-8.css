@@ -39,6 +39,7 @@ body{
 .nav li a {
   color: white;
   text-decoration: none;
+  height: 100%;
 }
 
 .nav li a:hover {
