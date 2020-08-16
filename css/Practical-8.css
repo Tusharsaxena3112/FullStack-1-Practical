@@ -20,7 +20,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: grey;
+  background-color:rgb(36, 35, 35,0.8);
   color: white;
   font-size: 50px;
   width: 98vw;
