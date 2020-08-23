@@ -375,6 +375,7 @@ body {
 
   #check:checked ~ .menu {
     right: 0%;
+    background-color: rgb(26, 21, 22);
   }
   .sec-1-box img {
     float: left;
@@ -469,6 +470,7 @@ body {
     box-shadow: 2px 2px 2px 2px grey;
     margin-bottom: 20px;
   }
+
   .sec-4 {
     height: 10vh;
     margin-top: 10px;
@@ -480,5 +482,78 @@ body {
     width: 98vw;
     font-size: 15px;
     clear: both;
+  }
+}
+
+.side-bar{
+  width:30%;
+  height:100%;
+  position: fixed;
+  top:11vh;
+  background-color:rgb(26, 21, 22,0.5);
+  left:-100%;
+  border-radius: 10px;
+}
+
+.side-bar ul { 
+  list-style: none;
+}
+
+.side-bar ul li{
+  padding: 20px;
+  text-align: center;
+  border-bottom:1px white solid;
+}
+.side-bar ul li a{
+  padding: 20px;
+  text-align: center;
+  color:white;
+  font-size: 25px;
+}
+
+.side-bar ul li a i {
+  margin:20px;
+}
+
+.side-bar ul li:hover{
+  border-left:10px solid white;
+  transition: .5s;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:30px
+}
+
+.social-links a{
+  font-size: 30px;
+  color:white;
+  margin:20px;
+  text-align: center;
+}
+.social-open {
+  font-size:30px;
+  color:white;
+  position: fixed;
+  top:20px;
+  left:40px;
+}
+ 
+#side-check{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+} 
+
+#side-check:checked ~ .side-bar{
+  left:10px;
+  transition: 1s;
+}
+
+@media (max-width:800px){
+  .side-bar{
+    width:100%;
   }
 }
