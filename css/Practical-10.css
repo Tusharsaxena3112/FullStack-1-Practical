@@ -486,8 +486,8 @@ body {
 }
 
 .side-bar{
-  width:30%;
-  height:100%;
+  width:20%;
+  height:80%;
   position: fixed;
   top:11vh;
   background-color:rgb(26, 21, 22,0.5);
@@ -500,7 +500,7 @@ body {
 }
 
 .side-bar ul li{
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   border-bottom:1px white solid;
 }
