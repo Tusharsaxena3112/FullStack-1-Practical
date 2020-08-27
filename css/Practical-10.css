@@ -277,6 +277,7 @@ body {
   width: 300px;
   box-shadow: 3px 3px 3px 3px black;
   background-color: wheat;
+  height:25%;
   overflow: hidden;
 }
 
@@ -315,7 +316,7 @@ body {
   height: 200px;
   line-height: 20px;
 }
-.description .button {
+.button {
   background-color: grey;
   padding: 10px;
   margin: 10px;
@@ -392,7 +393,7 @@ body {
     margin-bottom: 30px;
     border-radius: 5px;
     float: left;
-    width: 350px;
+    width: 70%;
     box-shadow: 3px 3px 3px 3px black;
     background-color: rgb(233, 215, 160);
     overflow: hidden;
@@ -428,22 +429,46 @@ body {
   .sec-1-box img {
     float: left;
     background-color: rgb(224, 217, 184);
-    width: 25%;
-    height: 25%;
+    width: 40%;
+    height: 40%;
     border-radius: 50%;
     margin-left: 50px;
     box-shadow: 2px 2px 2px 2px grey;
     margin-bottom: 20px;
   }
-}
-
-@media (min-width: 1020px) and (max-width: 1419px) {
   .box {
     margin-left: 50px;
     margin-bottom: 30px;
     border-radius: 5px;
     float: left;
-    width: 270px;
+    width: 40%;
+    box-shadow: 3px 3px 3px 3px black;
+    background-color: rgb(233, 215, 160);
+    overflow: hidden;
+  }
+}
+
+/* @media (max-width:758px){
+  .box {
+    margin-left: 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    float: left;
+    width: 80%;
+    box-shadow: 3px 3px 3px 3px black;
+    background-color: rgb(233, 215, 160);
+    overflow: hidden;
+  }
+} */
+
+@media (min-width: 1020px) and (max-width: 1429px) {
+  .box {
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    float: left;
+    width: 20%;
     box-shadow: 3px 3px 3px 3px black;
     background-color: rgb(233, 215, 160);
     overflow: hidden;
@@ -470,7 +495,6 @@ body {
     box-shadow: 2px 2px 2px 2px grey;
     margin-bottom: 20px;
   }
-
   .sec-4 {
     height: 10vh;
     margin-top: 10px;
@@ -484,7 +508,6 @@ body {
     clear: both;
   }
 }
-
 .side-bar{
   width:20%;
   height:100%;
