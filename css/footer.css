@@ -11,7 +11,7 @@ body{
     background-color:rgb(27, 27, 27,0.67);
 }
 .links{
-    display:flex;
+    display: flex;
     color:white;
     margin-top:20px;
     justify-content: space-evenly;
@@ -20,7 +20,7 @@ body{
 .links__content{
     padding:5px;
     width:30%;
-    margin:20px;
+    margin-left:20px;
 }
 
 .links__header{
@@ -105,4 +105,19 @@ i:hover{
     text-align:center;
     padding-top:20px;
     padding-bottom:20px;
+}
+
+@media (max-width:515px){
+    .links__content{
+        display: none;
+    }
+    .register h3{
+        display: none;
+    }
+}
+@media (max-width:415px){
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
 }
