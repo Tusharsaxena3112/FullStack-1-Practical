@@ -120,6 +120,7 @@ body {
   margin-top: 2px;
   width: 98vw;
   border-radius: 10px;
+  transition: 1s;
 }
 
 .banner-content {
@@ -516,6 +517,7 @@ body {
   background-color:rgb(26, 21, 22,0.5);
   left:-100%;
   border-radius: 10px;
+  transition: 1s;
 }
 
 .side-bar ul { 
@@ -572,7 +574,13 @@ body {
 
 #side-check:checked ~ .side-bar{
   left:10px;
-  transition: 1s;
+  
+}
+
+#side-check:checked ~ .banner{
+  width:80%;
+  float:right;
+
 }
 
 @media (max-width:800px){
