@@ -51,3 +51,52 @@ span{
 i{
     color:rgb(168, 164, 164);
 }
+
+.sec-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    padding:30px;
+}
+
+.sec-2 p{
+    font-size:30px;
+    color:rgb(168, 164, 164);
+    margin:10px;
+}
+
+.sec-2 a{
+    background:red;
+    color:white;
+    font-size:25px;
+    text-decoration:none;
+    padding:10px;
+    border-radius:15px ;
+}
+.sec-3{
+    margin:10px;
+    padding:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-3 ul {
+    list-style:none;
+}
+
+.sec-3 ul li{
+    display: inline;
+}
+.sec-3 ul li a{
+    font-size:60px;
+    margin:20px;
+}
+.footer-content{
+    text-align:center;
+    color:rgb(168, 164, 164);
+    font-size:20px;
+    padding:20px;
+    margin:10px;
+}
