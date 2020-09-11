@@ -2,12 +2,14 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: 'Kufam', cursive;
 }
 
 .main-content h1{ 
     text-align:center;
     color:grey;
     font-size:45px;
+    text-transform: uppercase;
 }
 
 footer{
