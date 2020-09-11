@@ -13,7 +13,9 @@
 footer{
     background:rgb(22, 21, 21);
     margin:10px;
-    padding:10px;
+    /* padding:10px; */
+    padding-top:10px;
+    padding-bottom:10px;
 }
 .sec-1{
     display:flex;
@@ -104,13 +106,30 @@ i{
     font-size:60px;
     margin:20px;
 }
-.sec-3 ul li a:hover:nth-child(1) i{
-   color:red;
+.sec-3 ul li:nth-child(1):hover i{
+   color:#f94877;
+   transition:.4s;
 }
+.sec-3 ul li:nth-child(2):hover i{
+    color:#0077B5;
+    transition:.4s;
+ }
+ .sec-3 ul li:nth-child(3):hover i{
+    color:#3b5999;
+    transition:.4s;
+ }
+ .sec-3 ul li:nth-child(4):hover i{
+    color:#55acee;
+    transition:.4s;
+ }
+
 .footer-content{
     text-align:center;
     color:rgb(168, 164, 164);
     font-size:20px;
     padding:20px;
     margin:10px;
+}
+hr{
+    opacity:.2;
 }
