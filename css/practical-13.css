@@ -43,6 +43,12 @@ footer{
     font-size: 20px;
     margin:15px;
 }
+.link ul li a:hover{
+    color:white;
+}
+.link ul li a:hover span{
+    color:white;
+}
 span{
     color:rgb(168, 164, 164);
     margin:25px;
@@ -74,6 +80,11 @@ i{
     padding:10px;
     border-radius:15px ;
 }
+.sec-2 a:hover{
+    
+    background:blueviolet;
+    transition:1s;
+}
 .sec-3{
     margin:10px;
     padding:30px;
@@ -92,6 +103,9 @@ i{
 .sec-3 ul li a{
     font-size:60px;
     margin:20px;
+}
+.sec-3 ul li a:hover:nth-child(1) i{
+   color:red;
 }
 .footer-content{
     text-align:center;
