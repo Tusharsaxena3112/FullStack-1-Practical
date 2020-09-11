@@ -166,3 +166,341 @@ i{
 hr{
     opacity:.2;
 }
+
+@media (max-width:767px){
+    .main-content h1{ 
+        text-align:center;
+        color:grey;
+        font-size:45px;
+        text-transform: uppercase;
+    }
+    
+    footer{
+        background:rgb(22, 21, 21);
+        margin:10px;
+        /* padding:10px; */
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .sec-1{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sec-1 h2{
+        color:grey;
+        font:18px;
+        margin-bottom: 10px;
+    }
+    .sec-1 p{
+        color:rgb(168, 164, 164);
+    }
+    .sec-1 .about{
+        width:100%;
+        padding:20px;
+    }
+    .sec-1 .about p{
+        line-height:25px ;
+    }
+    /* .link{
+        margin: 20px;
+    } */
+    .link ul{
+        list-style: none;
+    }
+    .link ul li a{
+        color:rgb(168, 164, 164);
+        text-decoration:none;
+        font-size: 20px;
+        margin:15px;
+    }
+    .link ul li a:hover{
+        color:white;
+    }
+    .link ul li a:hover span{
+        color:white;
+    }
+    span{
+        color:rgb(168, 164, 164);
+        margin:25px;
+        font-size: 20px;
+    }
+    i{
+        color:rgb(168, 164, 164);
+    }
+    
+    .sec-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:10px;
+        padding:30px;
+    }
+    
+    .sec-2 p{
+        font-size:30px;
+        color:rgb(168, 164, 164);
+        margin:10px;
+    }
+    
+    .sec-2 a{
+        background:red;
+        color:white;
+        font-size:25px;
+        text-decoration:none;
+        padding:10px;
+        border-radius:15px ;
+    }
+    .sec-2 a:hover{
+        
+        background:blueviolet;
+        transition:1s;
+    }
+    .sec-3{
+        margin:10px;
+        padding:30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sec-3 ul {
+        list-style:none;
+    }
+    
+    .sec-3 ul li{
+        display: inline;
+    }
+    .sec-3 ul li a{
+        font-size:60px;
+        margin:20px;
+    }
+    .sec-3 ul li:nth-child(1):hover i{
+       color:#f94877;
+       transition:.4s;
+    }
+    .sec-3 ul li:nth-child(2):hover i{
+        color:#0077B5;
+        transition:.4s;
+     }
+     .sec-3 ul li:nth-child(3):hover i{
+        color:#3b5999;
+        transition:.4s;
+     }
+     .sec-3 ul li:nth-child(4):hover i{
+        color:#55acee;
+        transition:.4s;
+     }
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        padding:20px;
+    }
+    .footer-content p{
+        text-align:center;
+        color:rgb(168, 164, 164);
+        font-size:20px;
+        margin:10px;
+        position:relative;
+    }
+    .footer-content p::before{
+        content: '';
+        width:0;
+        height:2px;
+        display:block;
+        position:absolute;
+        left:0;
+        background: white;
+        top:-10px;
+        transition : all .3s;
+     }
+    
+    .footer-content p::after{
+       content: '';
+       width:0;
+       height:2px;
+       display:block;
+       position:absolute;
+       right:0;
+       background: white;
+       bottom:-10px;
+       transition : all .3s;
+    }
+    .footer-content p:hover::after,
+    .footer-content p:hover::before{
+        width:100%;
+    }
+    hr{
+        opacity:.2;
+    }
+    
+}
+
+@media (max-width:663px){
+    .main-content h1{ 
+        text-align:center;
+        color:grey;
+        font-size:45px;
+        text-transform: uppercase;
+    }
+    
+    footer{
+        background:rgb(22, 21, 21);
+        margin:10px;
+        /* padding:10px; */
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .sec-1{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sec-1 h2{
+        color:grey;
+        font:18px;
+        margin-bottom: 10px;
+    }
+    .sec-1 p{
+        color:rgb(168, 164, 164);
+    }
+    .sec-1 .about{
+        width:100%;
+        padding:20px;
+    }
+    .sec-1 .about p{
+        line-height:25px ;
+    }
+    .link{
+        margin: 20px;
+    }
+    .link ul{
+        list-style: none;
+    }
+    .link ul li a{
+        color:rgb(168, 164, 164);
+        text-decoration:none;
+        font-size: 20px;
+        margin:15px;
+    }
+    .link ul li a:hover{
+        color:white;
+    }
+    .link ul li a:hover span{
+        color:white;
+    }
+    span{
+        color:rgb(168, 164, 164);
+        margin:25px;
+        font-size: 20px;
+    }
+    i{
+        color:rgb(168, 164, 164);
+    }
+    
+    .sec-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:10px;
+        padding:30px;
+    }
+    
+    .sec-2 p{
+        font-size:30px;
+        color:rgb(168, 164, 164);
+        margin:10px;
+    }
+    
+    .sec-2 a{
+        background:red;
+        color:white;
+        font-size:25px;
+        text-decoration:none;
+        padding:10px;
+        border-radius:15px ;
+    }
+    .sec-2 a:hover{
+        
+        background:blueviolet;
+        transition:1s;
+    }
+    .sec-3{
+        margin:10px;
+        padding:30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sec-3 ul {
+        list-style:none;
+    }
+    
+    .sec-3 ul li{
+        display: inline;
+    }
+    .sec-3 ul li a{
+        font-size:60px;
+        margin:20px;
+    }
+    .sec-3 ul li:nth-child(1):hover i{
+       color:#f94877;
+       transition:.4s;
+    }
+    .sec-3 ul li:nth-child(2):hover i{
+        color:#0077B5;
+        transition:.4s;
+     }
+     .sec-3 ul li:nth-child(3):hover i{
+        color:#3b5999;
+        transition:.4s;
+     }
+     .sec-3 ul li:nth-child(4):hover i{
+        color:#55acee;
+        transition:.4s;
+     }
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        padding:20px;
+    }
+    .footer-content p{
+        text-align:center;
+        color:rgb(168, 164, 164);
+        font-size:20px;
+        margin:10px;
+        position:relative;
+    }
+    .footer-content p::before{
+        content: '';
+        width:0;
+        height:2px;
+        display:block;
+        position:absolute;
+        left:0;
+        background: white;
+        top:-10px;
+        transition : all .3s;
+     }
+    
+    .footer-content p::after{
+       content: '';
+       width:0;
+       height:2px;
+       display:block;
+       position:absolute;
+       right:0;
+       background: white;
+       bottom:-10px;
+       transition : all .3s;
+    }
+    .footer-content p:hover::after,
+    .footer-content p:hover::before{
+        width:100%;
+    }
+    hr{
+        opacity:.2;
+    }
+     
+}
