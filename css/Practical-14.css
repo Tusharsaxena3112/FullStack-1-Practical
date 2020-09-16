@@ -1,0 +1,25 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.container{
+    border:1px solid;
+    display: flex;
+    padding:10px;
+    justify-content: space-around;
+}
+
+.template-1{
+    border:1px solid;
+    width:30%;
+}
+.template-2{
+    border:1px solid;
+    width:30%;
+}
+.template-3{
+    border:1px solid;
+    width:30%;
+}
