@@ -3,7 +3,9 @@
     padding:0px;
     box-sizing: border-box;
 }
-
+body{
+    background:linear-gradient(90deg, rgb(246, 247, 224) 0%, rgba(241, 190, 169, 0.88) 0%, rgb(245, 222, 222) 97%);
+}
 .container{
     display: flex;
     padding:10px;
@@ -16,6 +18,8 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     margin:20px;
     font-size: 50px;
+    color:rgba(255, 245, 245, 0.979);
+    text-shadow: silver 1px;
 }
 .template-1{
     width:30%;
@@ -192,6 +196,9 @@ h1{
     color:grey;
     margin-bottom:10px;
 }
+.template-3 .input-section-1 label{
+    color: rgb(0, 183, 255);
+}
 .template-3 .input-section-1 input{
     border-top: none;
     border-left: none;
@@ -199,6 +206,7 @@ h1{
     background: transparent;
     width:100%;
     font-size: 30px;
+   
 }
 .template-3 .input-section-1 .forgot{
     text-align: right;
@@ -240,4 +248,36 @@ h1{
     border-radius: 20px;
     padding-right:20px;
     padding-left:20px;
+}
+
+@media (max-width:850px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        justify-content: center;
+        align-items: center;
+        margin-top:100px;
+    }
+    .template-1{
+        width:80%;
+        margin:30px;
+        border-radius:5px;
+        box-shadow: 1px 1px 1px 1px grey;
+        background: rgba(238, 233, 222,0.5);
+    }
+    .template-3{
+        width:80%;
+        margin:30px;
+        border-radius:5px;
+        box-shadow:1px 1px 1px 1px grey;
+        background-color: honeydew;
+    }
+    .template-2{
+        width:80%;
+        margin:30px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px grey;
+        background-color: ghostwhite;
+    }
 }
