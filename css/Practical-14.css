@@ -33,7 +33,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgb(24, 236, 255) 0%, rgba(228, 228, 77, 0.88) 0%, rgb(99, 235, 133) 97%);
+    background: linear-gradient(90deg, rgb(247, 24, 255) 0%, rgba(77, 228, 208, 0.88) 0%, rgb(243, 83, 208) 97%);
     padding: 10px;
     /* border-radius:10px ; */
 }
@@ -66,7 +66,7 @@ h1{
     border-right: none;
     background: transparent;
     width:100%;
-    font-size: 40px;
+    font-size: 30px;
 }
 .template-1 .input-section-1 .forgot{
     text-align: right;
@@ -283,4 +283,21 @@ h1{
         box-shadow: 1px 1px 1px 1px grey;
         background-color: ghostwhite;
     }
+}
+
+.template-1 .button-section-1 input:hover{
+    background-color:rgb(229, 238, 66);
+    transition: 0.5s;
+}
+.template-2 .button-section-1 input:hover{
+    background-color:rgb(240, 11, 61);
+    transition: 0.5s;
+}
+.template-3 .button-section-1 input:hover{
+    background-color:rgb(48, 61, 247);
+    transition: 0.5s;
+}
+i:hover{
+    color:pink;
+    transition: 0.5s;
 }
