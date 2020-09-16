@@ -10,13 +10,14 @@ body{
     display: flex;
     padding:10px;
     justify-content: space-around;
-    margin-top:100px;
+    margin-top:70px;
 }
 h1{
     text-align: center;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     margin:20px;
+    font-variant: small-caps;
     font-size: 50px;
     color:rgba(255, 245, 245, 0.979);
     text-shadow: silver 1px;
@@ -120,8 +121,8 @@ h1{
 .template-2 .input-section-1 div{
     color:grey;
     margin-bottom:10px;
-}
-.template-2 .input-section-1 input{
+ }
+ .template-2 .input-section-1 .input{
     border-top: none;
     border-left: none;
     border-right: none;
@@ -129,10 +130,12 @@ h1{
     width:100%;
     font-size: 30px;
 }
+.template-2 .input-section-1 .forgot{
+    display:block;
+}
 .template-2 .input-section-1 .forgot input{
-    display: flex;
-    justify-content: left;
-    align-items: left;
+    margin:0px;
+    padding:0px;
 }
 .template-2 .button-section-1{
     display: flex;
