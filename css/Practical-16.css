@@ -63,8 +63,22 @@ body{
 }
 .todo .check-btn{
     padding:5px;
+    color:green;
+    background-color: greenyellow;
+    outline: none;
+    border-radius: 5px;
 }
 .todo .delete-btn{
     padding:5px;
     margin-right: 10px;
+    color: red;
+    background-color: salmon;
+    outline: none;
+}
+i{
+    pointer-events: none;
+}
+.check{
+    text-decoration: line-through;
+    opacity: 0.5;
 }
