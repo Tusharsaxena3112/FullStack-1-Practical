@@ -1,0 +1,28 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.time-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#clock{
+    font-size: 8rem;
+    margin: 10px;
+}
+
+.greeting{
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.name{
+    font-size: 4rem;
+    margin: 10px;
+    color: grey;
+}
