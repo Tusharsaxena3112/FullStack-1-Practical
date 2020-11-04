@@ -3,6 +3,10 @@
     padding:0px;
     box-sizing: border-box;
 }
+body{
+background-size: cover;
+background-repeat: no-repeat;
+}
 .time-container{
     display: flex;
     flex-direction: column;
@@ -23,6 +27,11 @@
 
 .name{
     font-size: 4rem;
-    margin: 10px;
+    margin: 5px;
     color: grey;
+}
+
+.heart{
+    font-size: 8rem;
+    opacity: 0.6;
 }
