@@ -35,3 +35,8 @@ background-repeat: no-repeat;
     font-size: 8rem;
     opacity: 0.6;
 }
+
+#date{
+    font-size: 30px;
+    color: rgb(226, 158, 110);
+}

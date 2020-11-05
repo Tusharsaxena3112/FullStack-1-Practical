@@ -2,6 +2,7 @@ var clock = document.getElementById('clock');
 var greeting  = document.getElementById('greet');
 var mood = document.getElementById('mood');
 const name = document.getElementById('chName');
+var todayDate = document.getElementById('date');
 
 name.addEventListener("keypress",setName);
 name.addEventListener("blur",setName);
@@ -12,7 +13,9 @@ var min = time.getMinutes();
 var seconds = time.getSeconds();
 var amPm = hours>12?'PM':'AM';
 var hour_t  = hours%12||12; 
+var today = time.toDateString();
 clock.innerHTML = `${addZero(hour_t)}<span>:</span>${addZero(min)}<span>:</span>${addZero(seconds)} ${amPm}`;
+todayDate.innerHTML = `${today}`;
 if (hours >=20){
     document.body.style.backgroundImage = "url('../images/night1.jpg')";
     clock.style.color = "white";
