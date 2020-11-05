@@ -1,7 +1,10 @@
 var clock = document.getElementById('clock');
 var greeting  = document.getElementById('greet');
 var mood = document.getElementById('mood');
+const name = document.getElementById('chName');
 
+name.addEventListener("keypress",setName);
+name.addEventListener("blur",setName);
 function updateTime(){
 var time =  new Date();
 var hours = time.getHours();
@@ -41,7 +44,30 @@ else{
 setTimeout(updateTime,1000);
 }
 updateTime();
+getName();
 
 function addZero(n){
     return parseInt(n)<10?'0'+n:n;
+};
+
+function setName(e){
+    if (e.type === 'keypress'){
+        if (e.keyCode === 13){
+            localStorage.setItem("name",e.target.innerHTML);
+            name.blur();
+        }
+    }
+    else{
+        localStorage.setItem("name",e.target.innerHTML);
+    }
+
+};
+
+function getName(){
+    if (localStorage.getItem('name') === null){
+        name.innerHTML = '[Enter Name]';
+    }
+    else{
+        name.innerHTML = localStorage.getItem('name');
+    }
 }
