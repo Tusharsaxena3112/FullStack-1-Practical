@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 30%;
+  background: white;
+  height: 50vh;
+  border-radius: 10px;
+  position: absolute;
+}
+
+#form-1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  left: 0px;
+}
+h1 {
+  margin: 10px;
+  color: grey;
+  font-size: 40px;
+}
+#form-1 input {
+  width: 60%;
+  height: 40px;
+  margin: 12px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#form-1 button {
+  height: 30px;
+  width: 100px;
+  margin: 20px;
+  background-color: crimson;
+  color: white;
+  outline: none;
+  border: none;
+}
+#form-2 {
+  position: absolute;
+  left: 450px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-2 input {
+  width: 60%;
+  height: 40px;
+  margin: 12px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#form-2 button {
+  height: 30px;
+  width: 100px;
+  margin: 20px;
+  background-color: crimson;
+  color: white;
+  outline: none;
+  border: none;
+}
+#form-3 {
+  position: absolute;
+  left: 450px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-3 input {
+  width: 60%;
+  height: 40px;
+  margin: 12px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#form-3 button {
+  height: 30px;
+  width: 100px;
+  margin: 20px;
+  background-color: crimson;
+  color: white;
+  outline: none;
+  border: none;
+}
