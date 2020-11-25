@@ -13,11 +13,45 @@ body {
 }
 
 .container {
-  width: 30%;
+  width: 360px;
   background: white;
   height: 50vh;
   border-radius: 10px;
   position: absolute;
+  /* overflow: hidden; */
+}
+.p-row{
+  width:360;
+  height: 40px;
+  box-shadow: 0px -1px 5px -1px black;
+  display: flex;
+  position: relative;
+  align-items:center;
+}
+.p-col{
+  width:120px;
+  text-align: center;
+  z-index: 1;
+  font-weight: bolder;
+}
+
+#progress{
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  background-color:  rgb(20, 180, 220);
+}
+
+#progress::after{
+  content: '';
+  width:0px;
+  height:0px;
+  position: absolute;
+  border-top:20px solid transparent;
+  border-bottom:20px solid transparent;
+  right:-20px;
+  top:0px;
+  border-left:20px solid rgb(20, 180, 220);
 }
 
 #form-1 {
@@ -30,9 +64,24 @@ body {
   left: 0px;
 }
 h1 {
+  margin-top:20px;
   margin: 10px;
   color: grey;
-  font-size: 40px;
+  font-size: 30px;
+}
+.btn{
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+  background-color: rgb(20, 180, 220);
+  color: white;
+  outline: none;
+  border: none;
+
+}
+.btn-box{
+  display:flex;
+  margin:0px
 }
 #form-1 input {
   width: 60%;
@@ -41,15 +90,7 @@ h1 {
   outline: none;
   border: none;
   border-bottom: 1px solid black;
-}
-#form-1 button {
-  height: 30px;
-  width: 100px;
-  margin: 20px;
-  background-color: crimson;
-  color: white;
-  outline: none;
-  border: none;
+  background: transparent;
 }
 #form-2 {
   position: absolute;
@@ -59,6 +100,7 @@ h1 {
   width: 100%;
   justify-content: center;
   align-items: center;
+
 }
 
 #form-2 input {
@@ -68,15 +110,7 @@ h1 {
   outline: none;
   border: none;
   border-bottom: 1px solid black;
-}
-#form-2 button {
-  height: 30px;
-  width: 100px;
-  margin: 20px;
-  background-color: crimson;
-  color: white;
-  outline: none;
-  border: none;
+  background: transparent;
 }
 #form-3 {
   position: absolute;
@@ -95,13 +129,5 @@ h1 {
   outline: none;
   border: none;
   border-bottom: 1px solid black;
-}
-#form-3 button {
-  height: 30px;
-  width: 100px;
-  margin: 20px;
-  background-color: crimson;
-  color: white;
-  outline: none;
-  border: none;
+  background: transparent;
 }
