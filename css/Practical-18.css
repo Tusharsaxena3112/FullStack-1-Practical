@@ -28,7 +28,7 @@ h1{
     color: grey;
 }
 .input{
-    margin: 10px;
+    margin: 15px;
     height:30px;
     border:none;
     outline:none;
@@ -60,7 +60,7 @@ h1{
     position: absolute;
     right:550px;
     text-align: center;
-    top:180px;
+    top:190px;
     visibility: hidden;
 }
 .email i{
@@ -68,7 +68,7 @@ h1{
     position: absolute;
     right:550px;
     text-align: center;
-    top:260px;
+    top:275px;
     visibility: hidden;
 }
 .password i{
@@ -76,7 +76,7 @@ h1{
     position: absolute;
     right:550px;
     text-align: center;
-    top:330px;
+    top:365px;
     visibility: hidden;
 }
 .confirm-password i{
@@ -84,7 +84,7 @@ h1{
     position: absolute;
     right:550px;
     text-align: center;
-    top:410px;
+    top:450px;
     visibility: hidden;
 }
 #submit-btn{
