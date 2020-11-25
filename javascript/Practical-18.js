@@ -1,4 +1,3 @@
-//Selector
 var form = document.getElementById("form");
 var username = document.getElementById("username");
 var email = document.getElementById("email");
@@ -30,10 +29,18 @@ function checkValid() {
     userMsg.style.visibility = "visible";
     nameFails.style.visibility = "visible";
   } else {
-    userMsg.style.visibility = "hidden";
-    nameFails.style.visibility = "hidden";
-    nameCheck.style.visibility = "visible";
-    username.style.borderBottom = "1px green solid";
+    if (username.value.trim().match(/^[a-z0-9]+$/g)) {
+      userMsg.style.visibility = "hidden";
+      nameFails.style.visibility = "hidden";
+      nameCheck.style.visibility = "visible";
+      username.style.borderBottom = "1px green solid";
+    } else {
+      username.style.borderBottom = "1px red solid";
+      userMsg.innerHTML = "* User Name should only contain lower case with no special symbols";
+      userMsg.style.visibility = "visible";
+      nameFails.style.visibility = "visible";
+      nameCheck.style.visibility = "hidden";
+    }
   }
   if (email.value.trim() === "") {
     email.style.borderBottom = "1px red solid";
@@ -41,10 +48,18 @@ function checkValid() {
     emailError.style.visibility = "visible";
     emailFails.style.visibility = "visible";
   } else {
-    emailError.style.visibility = "hidden";
-    emailFails.style.visibility = "hidden";
-    emailcheck.style.visibility = "visible";
-    email.style.borderBottom = "1px green solid";
+    if (email.value.trim().match(/^[\w-\.]+@([\w-]+\.)+com$/g)) {
+      emailError.style.visibility = "hidden";
+      emailFails.style.visibility = "hidden";
+      emailcheck.style.visibility = "visible";
+      email.style.borderBottom = "1px green solid";
+    } else {
+      email.style.borderBottom = "1px red solid";
+      emailError.innerHTML = "* Enter a valid email";
+      emailError.style.visibility = "visible";
+      emailFails.style.visibility = "visible";
+      emailcheck.style.visibility = "hidden";
+    }
   }
   if (password.value.trim() === "") {
     password.style.borderBottom = "1px red solid";
@@ -73,7 +88,7 @@ function checkValid() {
       confirmError.innerHTML = "* Password Should be same as above";
       confirmError.style.visibility = "visible";
       confirmFails.style.visibility = "visible";
-      confirmCheck.style.visibility = 'hidden';
+      confirmCheck.style.visibility = "hidden";
     }
   }
 }
